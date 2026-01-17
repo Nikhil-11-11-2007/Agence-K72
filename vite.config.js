@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base:"/Agence-K72/",
   plugins: [react(),tailwindcss()],
-  base:"/Agence-K72/"
 })

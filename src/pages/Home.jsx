@@ -2,15 +2,17 @@ import React from 'react'
 import Video from '../components/home/Video'
 import HomeHeroText from '../components/home/HomeHeroText'
 import HomeBottomText from '../components/home/HomeBottomText'
+import HomeSection from '../components/home/HomeSection'
 
 const Home = () => {
   return (
-    <div className='h-screen w-screen bg-amber-900'>
-      <div className='h-screen w-screen bg-amber-900 fixed'>
+    <div className='min-h-screen w-full overflow-hidden'>
+      <div className='h-screen w-screen fixed'>
         <Video />
       </div>
-      <div className='min-h-screen w-screen relative flex flex-col'>
+      <div className='min-h-screen w-screen relative flex items-center text-white flex-col overflow-hidden px-[2vw] py-[1vw]'>
         <HomeHeroText />
+        <HomeSection />
         <HomeBottomText />
       </div>
     </div>
